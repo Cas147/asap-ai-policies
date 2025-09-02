@@ -1,16 +1,318 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
-    <title>ASAP.ai - Eliminación de Datos</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eliminación de Datos - ASAP.ai</title>
+    <style>
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.6;
+            color: #1F2937;
+            max-width: 700px;
+            margin: 0 auto;
+            padding: 20px;
+            background: linear-gradient(135deg, #F0FDFA 0%, #ECFDF5 50%, #F0F9FF 100%);
+            min-height: 100vh;
+        }
+        
+        .container {
+            background: white;
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.15);
+            border: 1px solid rgba(20, 184, 166, 0.1);
+        }
+        
+        .header {
+            background: linear-gradient(135deg, #0F766E 0%, #14B8A6 35%, #5EEAD4 100%);
+            color: white;
+            padding: 30px;
+            text-align: center;
+            border-radius: 12px;
+            margin-bottom: 30px;
+        }
+        
+        .logo {
+            font-size: 32px;
+            font-weight: 700;
+            margin-bottom: 8px;
+            letter-spacing: -0.5px;
+        }
+        
+        .tagline {
+            font-size: 16px;
+            opacity: 0.95;
+        }
+        
+        h1 {
+            color: #0F766E;
+            font-size: 28px;
+            margin-bottom: 10px;
+            text-align: center;
+        }
+        
+        h2 {
+            color: #14B8A6;
+            font-size: 22px;
+            margin-top: 30px;
+            margin-bottom: 15px;
+            border-bottom: 2px solid #5EEAD4;
+            padding-bottom: 5px;
+        }
+        
+        .highlight {
+            background: linear-gradient(135deg, #FEF2F2 0%, #FEE2E2 100%);
+            border: 2px solid #F87171;
+            border-radius: 12px;
+            padding: 20px;
+            margin: 20px 0;
+            text-align: center;
+        }
+        
+        .process-box {
+            background: linear-gradient(135deg, #F0FDFA 0%, #CCFBF1 100%);
+            border: 2px solid #5EEAD4;
+            border-radius: 12px;
+            padding: 25px;
+            margin: 25px 0;
+        }
+        
+        .step {
+            background: white;
+            border-radius: 8px;
+            padding: 15px;
+            margin: 10px 0;
+            border-left: 4px solid #14B8A6;
+            display: flex;
+            align-items: center;
+        }
+        
+        .step-number {
+            background: #14B8A6;
+            color: white;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            margin-right: 15px;
+            flex-shrink: 0;
+        }
+        
+        .warning {
+            background: #FEF3C7;
+            border: 1px solid #F59E0B;
+            border-radius: 8px;
+            padding: 15px;
+            margin: 15px 0;
+        }
+        
+        .contact-info {
+            background: #EFF6FF;
+            border-radius: 12px;
+            padding: 20px;
+            margin: 20px 0;
+            text-align: center;
+        }
+        
+        .email-button {
+            display: inline-block;
+            background: linear-gradient(135deg, #0F766E 0%, #14B8A6 50%, #06B6D4 100%);
+            color: white;
+            padding: 15px 30px;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: 600;
+            font-size: 16px;
+            margin: 15px 0;
+            transition: transform 0.2s ease;
+        }
+        
+        .email-button:hover {
+            transform: translateY(-2px);
+        }
+        
+        .data-types {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 15px;
+            margin: 20px 0;
+        }
+        
+        .data-type {
+            background: #F8FAFC;
+            border-radius: 8px;
+            padding: 15px;
+            border-left: 4px solid #14B8A6;
+        }
+        
+        .footer {
+            text-align: center;
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid #E5E7EB;
+            color: #6B7280;
+        }
+    </style>
 </head>
 <body>
-    <h1>Eliminación de Datos - ASAP.ai</h1>
-    <p>Para eliminar tus datos de ASAP.ai:</p>
-    <ol>
-        <li>Envía un email a: <strong>andrescas1948@gmail.com</strong></li>
-        <li>Incluye tu email registrado en ASAP.ai</li>
-        <li>Especifica "Solicitud de eliminación de datos"</li>
-        <li>Procesaremos tu solicitud en máximo 30 días</li>
-    </ol>
+    <div class="container">
+        <div class="header">
+            <div class="logo">ASAP.ai</div>
+            <div class="tagline">Tu Co-Piloto de Marketing Inteligente</div>
+        </div>
+
+        <h1>🗑️ Eliminación de Datos</h1>
+
+        <div class="highlight">
+            <h2 style="margin-top: 0; color: #DC2626;">⚠️ Acción Irreversible</h2>
+            <p>La eliminación de datos es <strong>permanente e irreversible</strong>. Una vez procesada tu solicitud, no podremos recuperar tu información.</p>
+        </div>
+
+        <h2>📋 ¿Qué Datos se Eliminarán?</h2>
+        
+        <div class="data-types">
+            <div class="data-type">
+                <h3>👤 Información Personal</h3>
+                <ul>
+                    <li>Nombre y apellido</li>
+                    <li>Email registrado</li>
+                    <li>Contraseña (encriptada)</li>
+                    <li>Fecha de registro</li>
+                </ul>
+            </div>
+            
+            <div class="data-type">
+                <h3>📱 Conexiones Sociales</h3>
+                <ul>
+                    <li>Tokens de Instagram</li>
+                    <li>Tokens de Facebook</li>
+                    <li>Datos de perfiles conectados</li>
+                    <li>Historial de conexiones</li>
+                </ul>
+            </div>
+            
+            <div class="data-type">
+                <h3>🤖 Análisis de IA</h3>
+                <ul>
+                    <li>Perfiles de marca generados</li>
+                    <li>Análisis de contenido</li>
+                    <li>Recomendaciones guardadas</li>
+                    <li>Contenido generado</li>
+                </ul>
+            </div>
+            
+            <div class="data-type">
+                <h3>📊 Datos de Uso</h3>
+                <ul>
+                    <li>Logs de actividad</li>
+                    <li>Historial de sesiones</li>
+                    <li>Preferencias guardadas</li>
+                    <li>Métricas de uso</li>
+                </ul>
+            </div>
+        </div>
+
+        <h2>🔄 Proceso de Eliminación</h2>
+        
+        <div class="process-box">
+            <div class="step">
+                <div class="step-number">1</div>
+                <div>
+                    <strong>Envía tu solicitud</strong><br>
+                    Contacta por email con tu información
+                </div>
+            </div>
+            
+            <div class="step">
+                <div class="step-number">2</div>
+                <div>
+                    <strong>Verificación de identidad</strong><br>
+                    Confirmamos que eres el propietario de la cuenta
+                </div>
+            </div>
+            
+            <div class="step">
+                <div class="step-number">3</div>
+                <div>
+                    <strong>Procesamiento</strong><br>
+                    Eliminamos todos tus datos de nuestros sistemas
+                </div>
+            </div>
+            
+            <div class="step">
+                <div class="step-number">4</div>
+                <div>
+                    <strong>Confirmación</strong><br>
+                    Te enviamos confirmación de eliminación completa
+                </div>
+            </div>
+        </div>
+
+        <div class="warning">
+            <h3>⏰ Tiempo de Procesamiento</h3>
+            <p>Las solicitudes de eliminación se procesan en <strong>máximo 30 días hábiles</strong> desde la recepción de tu email.</p>
+        </div>
+
+        <h2>📧 Cómo Solicitar la Eliminación</h2>
+        
+        <div class="contact-info">
+            <h3>Información Requerida</h3>
+            <p>Para procesar tu solicitud, incluye la siguiente información en tu email:</p>
+            
+            <div style="text-align: left; max-width: 400px; margin: 20px auto;">
+                <ul>
+                    <li><strong>Email registrado:</strong> Tu dirección de email en ASAP.ai</li>
+                    <li><strong>Nombre completo:</strong> Como aparece en tu cuenta</li>
+                    <li><strong>Asunto:</strong> "Solicitud de eliminación de datos"</li>
+                    <li><strong>Confirmación:</strong> "Confirmo que deseo eliminar permanentemente todos mis datos"</li>
+                </ul>
+            </div>
+            
+            <a href="mailto:andrescas1948@gmail.com?subject=Solicitud%20de%20eliminación%20de%20datos%20-%20ASAP.ai&body=Hola,%0A%0ASolicito%20la%20eliminación%20permanente%20de%20todos%20mis%20datos%20de%20ASAP.ai.%0A%0AEmail%20registrado:%20[tu-email@ejemplo.com]%0ANombre%20completo:%20[Tu%20Nombre%20Completo]%0A%0AConfirmo%20que%20deseo%20eliminar%20permanentemente%20todos%20mis%20datos.%0A%0AGracias" 
+               class="email-button">
+                📧 Enviar Solicitud de Eliminación
+            </a>
+            
+            <p style="margin-top: 15px; font-size: 14px; color: #6B7280;">
+                O envía manualmente a: <strong>andrescas1948@gmail.com</strong>
+            </p>
+        </div>
+
+        <h2>❓ Preguntas Frecuentes</h2>
+        
+        <div style="margin: 20px 0;">
+            <h3>¿Puedo recuperar mis datos después?</h3>
+            <p><strong>No.</strong> La eliminación es permanente e irreversible. No mantenemos copias de seguridad de datos eliminados.</p>
+            
+            <h3>¿Se eliminan también mis datos de redes sociales?</h3>
+            <p><strong>No.</strong> Solo eliminamos los datos almacenados en ASAP.ai. Tus cuentas de Instagram y Facebook permanecen intactas.</p>
+            
+            <h3>¿Puedo crear una nueva cuenta después?</h3>
+            <p><strong>Sí.</strong> Puedes registrarte nuevamente con el mismo email, pero será una cuenta completamente nueva.</p>
+            
+            <h3>¿Qué pasa si cambio de opinión?</h3>
+            <p>Puedes cancelar tu solicitud <strong>solo antes</strong> de que comience el procesamiento. Contacta inmediatamente al mismo email.</p>
+        </div>
+
+        <div class="warning">
+            <h3>🔒 Datos que NO se Eliminan</h3>
+            <p>Por razones legales y de seguridad, algunos datos pueden conservarse por tiempo limitado:</p>
+            <ul>
+                <li>Logs de seguridad (90 días)</li>
+                <li>Información requerida por ley</li>
+                <li>Datos anonimizados para estadísticas</li>
+            </ul>
+        </div>
+
+        <div class="footer">
+            <p>Si tienes dudas sobre este proceso, contacta: <strong>andrescas1948@gmail.com</strong></p>
+            <p>&copy; 2024 ASAP.ai. Todos los derechos reservados.</p>
+            <p>Revolucionando el marketing digital con inteligencia artificial 🤖✨</p>
+        </div>
+    </div>
 </body>
 </html>
